@@ -4,7 +4,7 @@ info:
   description: API Backend for Architect Website
   version: 1.0.0
 servers:
-  - url: http://localhost:5678/api/
+  - url: https://sophie-bluel.herokuapp.com/api/  # Mettez ici l'URL de votre backend hébergé
 paths:
   /users/login:
     post:
@@ -61,7 +61,7 @@ paths:
                       example: "Objets"
         '500':
           description: Unexpected Error
-  /works:
+          /works:
     get:
       summary: Returns all works
       responses:
@@ -83,7 +83,7 @@ paths:
                       example: "Abajour Tahina"
                     imageUrl:
                       type: string
-                      example: "http://localhost:5678/images/abajour-tahina1651286843956.png"
+                      example: "https://sophie-bluel.herokuapp.com/images/abajour-tahina1651286843956.png"  # Mettez ici le lien de votre backend hébergé pour les images
                     categoryId:
                       type: integer
                       format: int64
@@ -182,3 +182,4 @@ securityDefinitions:
     type: JWT
     name: Authorization
     in: header
+
