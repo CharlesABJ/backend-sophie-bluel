@@ -3,7 +3,7 @@ const app = require("./app");
 const express = require("express");
 const path = require("path");
 
-const port = process.env.PORT || 5678;
+const port = process.env.PORT;
 app.set("port", port);
 
 const errorHandler = (error) => {
